@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: gray;
+    color: white; 
+}
+
+#inventario {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    background-color: cornflowerblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: max-content;
+    margin: 20px auto;
+}
+ .slot {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border: 2px solid aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+ }
+
+ .slot img {
+    max-width: 80%;
+    max-height: 80%;
+ }
+
+ .remover {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: wheat;
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
